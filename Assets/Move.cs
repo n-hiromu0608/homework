@@ -5,9 +5,9 @@ using UnityEngine;
 public class Move : MonoBehaviour
 {
     [SerializeField] Rigidbody _rigidBody;
-    [SerializeField] int _movepw;
+    [SerializeField] int _speed;
     bool isStop = false;
-
+    
     void Awake()
     {
         _rigidBody = GetComponent<Rigidbody>();
@@ -16,9 +16,21 @@ public class Move : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (!isStop)
+        if (isStop == false)
         {
-            _rigidBody.velocity = transform.forward * _movepw;
+            _rigidBody.velocity = new Vector3(Input.GetAxis("Horizontal") * _speed, 0, 10);
+        }
+        else
+        {
+            _rigidBody.velocity = transform.forward * _speed;
+        }
+        if(transform.position.x < -10)
+        {
+            transform.position = new Vector3(-10, transform.position.y,transform.position.z);
+        }
+        if (transform.position.x > 10)
+        {
+            transform.position = new Vector3(10, transform.position.y, transform.position.z);
         }
     }
 
