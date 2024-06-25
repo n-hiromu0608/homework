@@ -14,6 +14,11 @@ public class ScoreManager : MonoBehaviour
 
     [SerializeField] Text _text;
 
+    void Awake()
+    {
+        _instance = this; // インスタンスを設定
+    }
+
     void Update()
     {
         _text.text = ScoreManager.Instance.GetScore().ToString();
@@ -26,5 +31,9 @@ public class ScoreManager : MonoBehaviour
     public int GetScore()
     {
         return _score;
+    }
+    public void ResetScore()
+    {
+        _score = 0; // スコアを0にリセットする
     }
 }
