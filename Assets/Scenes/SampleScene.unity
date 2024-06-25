@@ -157,9 +157,9 @@ RectTransform:
   - {fileID: 495381091}
   m_Father: {fileID: 685034943}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -361.9, y: -166.1}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 96, y: 26.899994}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &33983131
@@ -654,9 +654,9 @@ RectTransform:
   - {fileID: 1775483224}
   m_Father: {fileID: 685034943}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 356, y: -168}
+  m_AnchorMin: {x: 1, y: 0}
+  m_AnchorMax: {x: 1, y: 0}
+  m_AnchoredPosition: {x: -96.4, y: 26.699997}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &382536249
@@ -1496,7 +1496,7 @@ GameObject:
   - component: {fileID: 860739709}
   - component: {fileID: 860739708}
   m_Layer: 0
-  m_Name: Cube (3)
+  m_Name: Frag2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2114,7 +2114,7 @@ GameObject:
   - component: {fileID: 1810387027}
   - component: {fileID: 1810387026}
   m_Layer: 0
-  m_Name: Cube (2)
+  m_Name: Frag
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

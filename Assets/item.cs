@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class item : MonoBehaviour
 {
-    private void OnCollisionEnter(Collision collision)
+    private void OnTriggerEnter(Collider other)
     {
-        if (collision.gameObject.tag == "Player")
+        if (other.gameObject.tag == "Player")
         {
             ScoreManager.Instance.AddScore(1);
             Destroy(gameObject);
